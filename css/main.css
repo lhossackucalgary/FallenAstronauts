@@ -1,0 +1,26 @@
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+.clear:last-child {
+  margin-bottom: 0px;
+}
+
+
+nav {
+
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding-bottom: 1em; /* Covers margin from last element */
+}
