@@ -22,31 +22,48 @@
 <body>
   <header>
     <nav>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="soyuz-1.html">Soyuz 1</a>
-        </li>
-        <li>
-          <a href="x15.html">X-15 Flight 3-65-97</a>
-        </li>
-        <li>
-          <a href="soyuz-11.html">Soyuz 11</a>
-        </li>
-        <li>
-          <a href="challenger.html">Space Shuttle Challenger</a>
-        </li>
-        <li>
-          <a href="columbia.html">Space Shuttle Columbia</a>
-        </li>
-      </ul>
+      <div class="menuwrapper">
+        <div class="menubtnwrap">
+          <button class="menubtnunderlay">
+            <img src="img/hamburger.png" alt="">
+          </button>
+        </div>
+        <input type="checkbox" class="menubtn">
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="soyuz-1.html">Soyuz 1</a>
+            </li>
+            <li>
+              <a href="x15.html">X-15 Flight 3-65-97</a>
+            </li>
+            <li>
+              <a href="soyuz-11.html">Soyuz 11</a>
+            </li>
+            <li>
+              <a href="challenger.html">Space Shuttle Challenger</a>
+            </li>
+            <li>
+              <a href="columbia.html">Space Shuttle Columbia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main>
     <h1>Fatal Spaceflight Disasters</h1>
+    <figure>
+      <picture>
+        <source src="https://" type="video/">
+        <img src="" alt="">
+      </picture>
+      <figcaption>Fallen astronaut memorial on the moon</figcaption>
+    </figure>
     <p>As of August 2020, in-flight accidents have killed 15 astronauts and 4
       cosmonauts, in five separate incidents. Three of them had flown above
       the Kármán line (edge of space), and one was intended to do so. In each
@@ -58,18 +75,52 @@
       generally honored by burial at the Kremlin Wall Necropolis in Moscow.
       No Soviet or Russian cosmonauts have died during spaceflight since 1971.</p>
 
-    <article class="">
-    </article>
-
-    <article class="">
+      <table>
+        <caption>Causes of fatalities by mission<a href="https://en.wikipedia.org/wiki/List_of_spaceflight-related_accidents_and_incidents">[source]</a></caption>
+        <thead>
+          <tr>
+            <th>Mission</th>
+            <th>Date</th>
+            <th>Incident</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Soyuz 1</td>
+            <td><time datetime="1967-04-24">April 24, 1967</time></td>
+            <td>Parachute failure</td>
+          </tr>
+          <tr>
+            <td>X-15 Flight 3-65-97</td>
+            <td><time datetime="1967-11-15">November 15, 1967</time></td>
+            <td>Control failure</td>
+          </tr>
+          <tr>
+            <td>Soyuz 11</td>
+            <td><time datetime="1971-06-30">June 30, 1971</time></td>
+            <td>Decompression in space</td>
+          </tr>
+          <tr>
+            <td>Challenger</td>
+            <td><time datetime="1986-01-28">January 28, 1986</time></td>
+            <td>Booster failure, disintegration</td>
+          </tr>
+          <tr>
+            <td>Columbia</td>
+            <td><time datetime="2003-02-1">February 1, 2003</time></td>
+            <td>Disintegration on reentry</td>
+          </tr>
+        </tbody>
+      </table>
   </main>
 
   <footer class="clear">
     <!-- TODO: Update year w/ js-->
-    <small>&#169; Lucas Hossack <span id="copyright_date">2020</span>, except content that is not his\.</small>
-    <p>All images and text content on this page are from
-      <a href="https://en.wikipedia.org/wiki/List_of_spaceflight-related_accidents_and_incidents">this wikipedia article</a>.
-    </p>
+    <small>Here are links to the fine content producers that I've ripped off:</small>
+    <ul>
+        <li>All text content on this page is from <a href="https://en.wikipedia.org/wiki/List_of_spaceflight-related_accidents_and_incidents">this wikipedia article</a>.</li>
+        <li> <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fthenounproject.com%2Fterm%2Fhamburger-menu%2F204478%2F&psig=AOvVaw35Yqpyi101GsPNDc2Fwstv&ust=1601012123080000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIikgYuJgewCFQAAAAAdAAAAABAJ">Hamburger menu image source</a></li>
+    </ul>
     <div>
       <p>Contact:</p>
       <ul>
@@ -78,6 +129,5 @@
       </ul>
     </div>
   </footer>
-
 </body>
 </html>

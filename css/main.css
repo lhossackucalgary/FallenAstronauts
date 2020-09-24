@@ -1,9 +1,16 @@
 * {
   font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin-top: 50px;
 }
 
 body {
@@ -14,13 +21,70 @@ body {
   margin-bottom: 0px;
 }
 
+/* Toggle hamburger menu */
+.menubtnwrap {
+  height: 50px;
+}
 
-nav {
+.menuwrapper {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: blue;
+}
 
+.menubtn {
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menubtnunderlay {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+}
+
+.menu {
+  display: none;
+}
+
+.menubtn:checked + .menu {
+  display: block;
+  transition: 1s;
+}
+
+.menubtnunderlay > img {
+  width: 45px;
+  height: 45px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul:last-child {
+  margin-bottom: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
 }
 
 footer {
-  background-color: black;
+  background-color: #81d8d0;
   color: white;
   padding-bottom: 1em; /* Covers margin from last element */
 }
