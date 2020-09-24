@@ -47,7 +47,7 @@ nav ul {
   }
 
   .menubtn {
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     margin: 0;
     padding: 0;
@@ -76,12 +76,13 @@ nav ul {
     transition: 1s;
   }
 
-  .menubtnunderlay > img {
-    width: 45px;
-    height: 45px;
+  .menubtnwrap img {
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: 0;
-    right: 0;
+    z-index: 2;
+    top: 5px;
+    right: 5px;
     margin: 0;
     padding: 0;
   }
@@ -121,12 +122,14 @@ nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
   }
   nav li {
     display: inline-block;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
   }
 }
 
