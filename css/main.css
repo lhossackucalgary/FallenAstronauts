@@ -30,7 +30,7 @@ body {
   position: fixed;
   top: 0px;
   width: 100%;
-  background-color: blue;
+  background-color: #81d8d0;
 }
 
 .menubtn {
@@ -75,12 +75,13 @@ nav ul {
 }
 
 nav ul:last-child {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: black;
+  margin: 1em;
 }
 
 footer {
