@@ -180,6 +180,11 @@ figure {
   max-width: 100%;
 }
 
+/* top link & target */
+#top {
+  position:relative;
+  top:-50px;
+}
 
 footer {
   background-color: rgba(129,216,208,1);
