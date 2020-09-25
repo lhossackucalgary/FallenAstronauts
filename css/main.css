@@ -237,7 +237,7 @@ figure {
   top:-50px;
 }
 
-footer .toplink {
+.toplink {
   /* top link */
   text-decoration: none;
   color: black;
@@ -251,7 +251,7 @@ footer .toplink {
   z-index: 1;
 }
 
-footer .toplink:hover {
+footer a:hover {
   font-weight: bold;
   text-shadow: -1px 1px rgba(243,244,247,1);
 }
@@ -260,4 +260,54 @@ footer {
   background-color: rgba(129,216,208,1);
   color: white;
   padding-bottom: 1em; /* Covers margin from last element */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer .sources, footer .contact {
+  flex-grow: 1;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+footer ul {
+  padding-inline-start: 0;
+}
+
+.footer_container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.sources a {
+  text-decoration: none;
+  color: black;
+}
+
+footer p {
+  text-decoration: underline;
+  color: black;
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
+  background-color: rgba(243,244,247,1);
+  padding: 0.25em 0.5em 0.25em 0.5em;
+  border-radius: 0.5em;
+}
+
+.contact small {
+  color: black;
 }
