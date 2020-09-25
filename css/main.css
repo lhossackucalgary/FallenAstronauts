@@ -44,7 +44,7 @@ nav ul {
     position: fixed;
     top: 0px;
     width: 100%;
-    background-color: #81d8d0;
+    background-color: rgba(129,216,208,1);
   }
 
   .menubtn {
@@ -108,7 +108,7 @@ nav ul {
     position: absolute;
     top: 0px;
     width: 100%;
-    background-color: #81d8d0;
+    background-color: rgba(129,216,208,1);
     max-height: 50px;
   }
 
@@ -130,7 +130,7 @@ nav ul {
 
 
 footer {
-  background-color: #81d8d0;
+  background-color: rgba(129,216,208,1);
   color: white;
   padding-bottom: 1em; /* Covers margin from last element */
 }
