@@ -13,8 +13,18 @@ h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+header + main {
   margin-top: 50px;
+}
+
+
+/* nav */
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: rgba(129,216,208,1);
+  max-height: 50px;
 }
 
 nav a {
@@ -24,7 +34,7 @@ nav a {
 
 nav a:hover {
   font-weight: bold;
-  text-shadow: -1px 1px white;
+  text-shadow: -1px 1px rgba(243,244,247,1);
 }
 
 nav ul {
@@ -104,14 +114,6 @@ nav ul {
     display: none;
   }
 
-  nav {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    background-color: rgba(129,216,208,1);
-    max-height: 50px;
-  }
-
   nav ul {
     display: flex;
     flex-direction: row;
@@ -127,6 +129,56 @@ nav ul {
   }
 }
 
+/* Main */
+main {
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main * {
+  max-width: 800px;
+}
+
+/* Table */
+table {
+  margin: 2em 0.5em 2em 0.5em;
+  border-collapse: collapse;
+  text-align: center;
+}
+th, td {
+  border: solid 1px black;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+th {
+  font-size: 1.1em;
+  text-decoration: underline;
+}
+tbody tr:nth-child(odd) {
+  background-color: rgba(243,244,247,1);
+}
+
+/* Images */
+figure {
+  margin: 0px;
+}
+
+#fallenastro img {
+  max-width: 100%;
+  width: 600px;
+  border-radius: 1em;
+}
+#fallenastro figcaption {
+  margin-top: 0;
+  font-size: 0.8em;
+}
+
+.astrocard img {
+  max-width: 100%;
+}
 
 
 footer {
