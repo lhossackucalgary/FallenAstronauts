@@ -16,7 +16,6 @@ header + main {
   margin-top: 50px;
 }
 
-
 /* nav */
 nav {
   position: fixed;
@@ -144,6 +143,7 @@ main * {
 
 main p {
   max-width: 800px;
+  text-align: justify;
 }
 
 /* Table */
