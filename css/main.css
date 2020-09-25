@@ -237,6 +237,25 @@ figure {
   top:-50px;
 }
 
+footer .toplink {
+  /* top link */
+  text-decoration: none;
+  color: black;
+  padding: 0.25em;
+  border: solid 2px rgba(243,244,247,1);
+  border-radius: 0.25em;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(243,244,247,0.65);
+  z-index: 1;
+}
+
+footer .toplink:hover {
+  font-weight: bold;
+  text-shadow: -1px 1px rgba(243,244,247,1);
+}
+
 footer {
   background-color: rgba(129,216,208,1);
   color: white;
