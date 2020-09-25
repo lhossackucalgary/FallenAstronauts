@@ -135,9 +135,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 main * {
+  max-width: 1200px;
+}
+
+main p {
   max-width: 800px;
 }
 
@@ -175,9 +180,55 @@ figure {
   font-size: 0.8em;
 }
 
+.astrocards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.astrocards ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.astrocard {
+  clear: both;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(243,244,247,1);
+  border-radius: 1em;
+  margin: 1em;
+}
+
 .astrocard img {
   max-width: 100%;
   width: 240px;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.astrocard figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+  width: 250px;
+}
+
+.astrocard figcaption {
+  font-size: 1.2em;
+}
+
+.astrocard p {
+  display: none;
 }
 
 /* top link & target */
